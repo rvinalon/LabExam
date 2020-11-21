@@ -11,7 +11,7 @@ namespace DataHelper
 {
     public class DataAccess
     {
-        static string myConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\LabExam\LabExam\App_Data\MasterFile.mdf;Integrated Security=True";
+        static string myConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MasterFile.mdf;Integrated Security=True";
         SqlConnection myConn = new SqlConnection(myConStr);
 
         public void SaveRecords(string firstName, string lastName, string emailAdd, string passWord)
